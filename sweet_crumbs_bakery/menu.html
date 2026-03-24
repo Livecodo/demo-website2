@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#3f0016",
+              "tertiary-fixed": "#ffd9e1",
+              "inverse-surface": "#34310d",
+              "tertiary": "#ab2c5d",
+              "surface-container-highest": "#eae4b1",
+              "inverse-primary": "#ffb2bf",
+              "secondary": "#77574d",
+              "on-surface-variant": "#534247",
+              "primary-fixed-dim": "#ffb2bf",
+              "on-tertiary-fixed": "#3f001b",
+              "on-background": "#1e1c00",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1e1c00",
+              "outline": "#867277",
+              "surface-bright": "#fffadf",
+              "tertiary-container": "#ff89ac",
+              "surface-variant": "#eae4b1",
+              "secondary-container": "#fed3c7",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#ffdbd0",
+              "surface-tint": "#bc004f",
+              "primary-container": "#ff8aa3",
+              "tertiary-fixed-dim": "#ffb1c5",
+              "on-error": "#ffffff",
+              "background": "#fffadf",
+              "primary-fixed": "#ffd9de",
+              "on-primary-container": "#860036",
+              "inverse-on-surface": "#f8f3be",
+              "surface-container-low": "#fbf5c1",
+              "on-secondary-fixed": "#2c160e",
+              "secondary-fixed-dim": "#e7bdb1",
+              "surface-dim": "#e1dca9",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#795950",
+              "surface": "#fffadf",
+              "on-secondary-fixed-variant": "#5d4037",
+              "surface-container-high": "#f0eab6",
+              "surface-container": "#f6f0bb",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#90003b",
+              "on-tertiary-fixed-variant": "#8b0e45",
+              "primary": "#bc004f",
+              "on-tertiary-container": "#830440",
+              "outline-variant": "#d8c1c6"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #fffadf;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface selection:bg-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fffadf]/85 dark:bg-zinc-900/85 backdrop-blur-md">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="text-[#bc004f] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-xl font-serif font-bold text-[#1e1c00] dark:text-[#fffadf]">Sweet Crumbs Bakery</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#1e1c00] dark:text-[#fffadf] opacity-80 hover:opacity-70 transition-opacity Be Vietnam Pro title-sm tracking-wider" href="home.html">Home</a>
+<a class="text-[#bc004f] font-bold Be Vietnam Pro title-sm tracking-wider" href="menu.html">Menu</a>
+<a class="text-[#1e1c00] dark:text-[#fffadf] opacity-80 hover:opacity-70 transition-opacity Be Vietnam Pro title-sm tracking-wider" href="contact.html">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium hover:opacity-90 active:scale-95 transition-all">
+                Order Now
+            </button>
+</div>
+<div class="bg-[#eae4b1] dark:bg-zinc-800 h-[1px] opacity-20"></div>
+</header>
+<main class="pt-24 pb-32">
+<!-- Hero / Editorial Header -->
+<section class="px-6 py-12 max-w-7xl mx-auto text-center">
+<h2 class="text-sm font-bold tracking-widest text-primary uppercase mb-4">Our Daily Offerings</h2>
+<h1 class="text-5xl md:text-7xl font-headline text-on-surface mb-6 leading-tight">Freshly Baked<br/><span class="italic text-primary">with Love</span></h1>
+<p class="max-w-2xl mx-auto text-on-secondary-container opacity-80 text-lg mb-12">Every morning, our atelier comes alive with the scent of rising dough and simmering fruit preserves. Explore our curated selection of artisanal delights.</p>
+</section>
+<!-- Category Filters -->
+<nav class="sticky top-[73px] z-40 bg-background/95 backdrop-blur-sm py-4 mb-12">
+<div class="max-w-7xl mx-auto px-6 overflow-x-auto">
+<div class="flex items-center justify-center gap-4 min-w-max" id="category-filters">
+<button data-filter="all" class="category-btn px-8 py-3 rounded-full bg-primary text-on-primary font-medium text-sm transition-all shadow-sm">All Items</button>
+<button data-filter="cakes" class="category-btn px-8 py-3 rounded-full bg-surface-container text-on-surface-variant font-medium text-sm hover:bg-surface-container-high transition-all">Cakes</button>
+<button data-filter="pastries" class="category-btn px-8 py-3 rounded-full bg-surface-container text-on-surface-variant font-medium text-sm hover:bg-surface-container-high transition-all">Pastries</button>
+<button data-filter="bread" class="category-btn px-8 py-3 rounded-full bg-surface-container text-on-surface-variant font-medium text-sm hover:bg-surface-container-high transition-all">Bread</button>
+<button data-filter="beverages" class="category-btn px-8 py-3 rounded-full bg-surface-container text-on-surface-variant font-medium text-sm hover:bg-surface-container-high transition-all">Beverages</button>
+</div>
+</div>
+</nav>
+<!-- Menu Grid -->
+<section class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="group flex flex-col product-item" data-category="bread">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-6">
+<img alt="Artisanal Sourdough" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Rustic loaf of artisanal sourdough bread with a flour-dusted crust and scoring pattern on a wooden baker's peel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWJ78E6KNCJKIB2cRdKHmwbFNlBI-LCUsmFYlda0-EFyPQe2m1byAOqa8_Z669Qy6a3LWpNHlt7-RbYzJqQfmLx4BHI5QWXtW86RvtoD6nbWPgn_i5wiVWg6KHOUWArz93noH1lUvHYxhAHJZARosgvG9wrexqqtAOA-Pf5pDf8vb1mOFkZWODrvEICo4pvNeWWRdZTyQqrGlaMWA-RmG69d32St1yTqQC42E_-iK8UyWgBeDrUJQDzOAheP5gzZGCQSdKP7s8td97"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Signature</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-headline text-on-surface">Artisanal Sourdough</h3>
+<span class="font-bold text-on-secondary-container">$9.50</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6 opacity-80">Naturally leavened for 24 hours, featuring a crisp, dark crust and a tender, airy crumb.</p>
+
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col mt-8 md:mt-0 product-item" data-category="cakes">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-6">
+<img alt="Chocolate Ganache Cake" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Luxurious decadent chocolate cake covered in glossy ganache with dark chocolate shavings and a single gold leaf accent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB80hTSkbmkF8HdEjWXYu9Y50dSh2HGLMtJFSunP7UqNBCeJSiiHiUKIex1jxZZe0oFpPOS4Gt0gJTkMDmXwAZlCboEaqwUdMXbJ0O0baJ4l8E_cpoPm7wMMGQXVThQqWKAZwjCMUqRmeCfdD5WrRQwGlfUE_shqS07wiW4X0cQwOHHGEI4uYhZZQIT_tiEqbnsah66HkUepuFbqa3uJdJYpNJbasOyCGxgmdQS43n_Sr1sr3vww3CiWjzEBvu_PtWZUWFGOOVPw_8u"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-headline text-on-surface">Chocolate Ganache</h3>
+<span class="font-bold text-on-secondary-container">$42.00</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6 opacity-80">Triple-layered dark chocolate sponge filled and glazed with 70% velvet cocoa ganache.</p>
+
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col mt-0 md:mt-8 lg:mt-0 product-item" data-category="pastries">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-6">
+<img alt="Classic Butter Croissant" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Golden flaky butter croissant showing many fine layers of pastry on a minimalist cream ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbN2Aa5ZIBOurwf6-v2z0ZsiCA0Lchv2Lh9UJEtnYzo4PEjpAPKlGM7BLPlmTG0PU_ht6gSCrWNgVUM0akwWlIWLs3l4wLe7-xi5Tdt3R3x2bJhVqgKmW_p4Q4Cs6sQye32rXTvlIHca5SFIkB8SOHzoDZV4KVtPbDFbMX0r8LFw93ZyXvf1A2hXxfguk6DRUkzMvyMQRBIi79Vgaca9w7stwdNZmC06IWBBred8DQygyd-m_qr_kVo-n-a8Vw2o7Tf-Ro5lSKkkfF"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Fresh Batch</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-headline text-on-surface">Butter Croissant</h3>
+<span class="font-bold text-on-secondary-container">$4.75</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6 opacity-80">Hand-laminated with premium French butter for a shatteringly crisp exterior.</p>
+
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col mt-8 md:mt-8 lg:mt-0 product-item" data-category="beverages">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-6">
+<img alt="Vanilla Bean Latte" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Creamy latte with intricate rosette foam art in a heavy ceramic mug with vanilla beans on the side" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdoWElYYc3ISVVKgeSGovSM1htw119EtqxI1nGRER-11PCwPAsbBE2RNhq0m81G683K6jBPUnsFJI3xi4p8I3Fo_FHfEiiUKi90wLbWr4e5OBgWWrMCj7xPrh0nvvXOBRTT3YkG9OD-xEetnyDxYcPpKoPhUcMVoYTtdadv0Ymcc7oj7Uf7B8oJ4inF718_ddmlma3_mHqV0RM2KjDf4QjNQAURMikHuMqrZQ7VGZnjywmkNtHwu3UwNGqNqDZDrFJVHnlmU_wa_9c"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-headline text-on-surface">Vanilla Bean Latte</h3>
+<span class="font-bold text-on-secondary-container">$5.25</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6 opacity-80">House-made Madagascar vanilla syrup paired with our signature espresso roast.</p>
+
+</div>
+<!-- Additional Product 5 -->
+<div class="group flex flex-col md:translate-y-4 product-item" data-category="pastries">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-6">
+<img alt="Berry Tart" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Small fruit tart filled with creamy custard and topped with symmetrical rows of fresh raspberries and blueberries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbOhWR8OpWZxvZhBBCRdLcKmO0oIXwt4BQTnkOP8Dq4Hr4Sl9vY-qYWJ92g8eIltbpe0Uqk-V74j43HRhJeYj-Qe5MyOKCWhXkdKLcRlBLuKFcK5sqFe3o4e2Oh3tMrCyo9OjgCa99Z7XdSUOCor0SofzrziERj25fEPDtyLrMTQ6JdHDJxw7i5Ej_3K2itLnVvoP2GyQU6lh-NsnBZNIhOjS0LTnQF-I1ZPrWGvLeNXzxSIV3_dEoEzIiURmU-q-ccDwCPTkyLTre"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-headline text-on-surface">Wild Berry Tart</h3>
+<span class="font-bold text-on-secondary-container">$7.00</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6 opacity-80">Sweet shortcrust pastry filled with crème pâtissière and topped with local berries.</p>
+
+</div>
+<!-- Additional Product 6 -->
+<div class="group flex flex-col md:translate-y-4 product-item" data-category="beverages">
+<div class="relative overflow-hidden rounded-lg aspect-square mb-6">
+<img alt="Espresso" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Double shot of espresso with rich hazelnut-colored crema in a white demitasse cup on a stone saucer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjFjvuRqCD0DdUutNigkU_XjRnwWi9tPXrUeRibYs3MSy_AYPxtOew00WBY5vCgAq6gG8qa18iWDugrvqCMEDUD5CcmdfB2N3s9rVOJtFnsoGSScJ4qSqgWIz45_SICJtrbdxXf4iIwl-p0pQ_P4MklT4keM7Gt1UDQD1WbT4N2oCb66sma7AFq1iNKVd39v4ibR53HbtljOWtJ03dL9e0z34kxlrBFnjh2fRMT2X6hw3s7GCLsnEjt-aMJeSopO4qfa-5OuAHe3x3"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-headline text-on-surface">Double Espresso</h3>
+<span class="font-bold text-on-secondary-container">$3.50</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6 opacity-80">Concentrated and bold, extracted from our seasonally rotating single-origin beans.</p>
+
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="max-w-7xl mx-auto px-6 mt-32 mb-16">
+<div class="bg-surface-container rounded-lg p-12 text-center relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-3xl font-headline text-on-surface mb-4">Join Our Baking List</h2>
+<p class="text-on-secondary-container opacity-80 mb-8 max-w-lg mx-auto">Get notified about fresh batches, seasonal specials, and exclusive baking workshops.</p>
+<div class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-grow px-6 py-3 rounded-md bg-surface-container-low border-none focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-on-surface-variant/50" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-md font-medium hover:opacity-90 transition-all">Subscribe</button>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-tertiary-container/10 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2rem] bg-[#fbf5c1] dark:bg-zinc-800">
+<div class="flex flex-col items-center gap-8 py-12 px-6 text-center w-full">
+<div class="text-lg font-serif text-[#1e1c00]">Sweet Crumbs Bakery</div>
+<div class="flex gap-8">
+<a class="text-[#795950] dark:text-zinc-400 hover:text-[#bc004f] transition-colors focus:ring-2 focus:ring-[#bc004f]/20 Noto Serif italic body-lg" href="#">Instagram</a>
+<a class="text-[#795950] dark:text-zinc-400 hover:text-[#bc004f] transition-colors focus:ring-2 focus:ring-[#bc004f]/20 Noto Serif italic body-lg" href="#">Facebook</a>
+<a class="text-[#795950] dark:text-zinc-400 hover:text-[#bc004f] transition-colors focus:ring-2 focus:ring-[#bc004f]/20 Noto Serif italic body-lg" href="#">Pinterest</a>
+</div>
+<p class="text-[#795950] dark:text-zinc-400 font-body italic">Freshly Baked Happiness Every Day</p>
+<div class="mt-4 text-xs opacity-50 text-on-surface">© 2024 Sweet Crumbs Bakery. All rights reserved.</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-[#fffadf] dark:bg-zinc-900 shadow-[0_-4px_30px_rgba(121,89,80,0.06)] rounded-t-[2rem] border-t border-[#d8c1c6]/15 flex justify-around items-center px-4 pb-4 pt-2">
+<a class="flex flex-col items-center justify-center text-[#1e1c00] dark:text-[#fffadf] opacity-60 hover:bg-[#f6f0bb] dark:hover:bg-zinc-800 rounded-full px-4 py-1" href="home.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="Noto Serif italic text-xs">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#fed3c7] dark:bg-[#bc004f]/20 text-[#795950] dark:text-[#f48fb1] rounded-full px-6 py-1 active:scale-90 transition-transform" href="menu.html">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="Noto Serif italic text-xs">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1e1c00] dark:text-[#fffadf] opacity-60 hover:bg-[#f6f0bb] dark:hover:bg-zinc-800 rounded-full px-4 py-1" href="contact.html">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="Noto Serif italic text-xs">Contact</span>
+</a>
+</nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const filterBtns = document.querySelectorAll('.category-btn');
+        const productItems = document.querySelectorAll('.product-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active classes from all buttons
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+                    b.classList.add('bg-surface-container', 'text-on-surface-variant', 'hover:bg-surface-container-high');
+                });
+                // Add active classes to the clicked button
+                btn.classList.remove('bg-surface-container', 'text-on-surface-variant', 'hover:bg-surface-container-high');
+                btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+                // Filter the items
+                const targetCategory = btn.getAttribute('data-filter');
+                productItems.forEach(item => {
+                    if (targetCategory === 'all' || item.getAttribute('data-category') === targetCategory) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    });
+</script>
+</body></html>

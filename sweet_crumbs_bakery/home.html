@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sweet Crumbs Bakery | Freshly Baked Happiness</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Noto Serif & Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#3f0016",
+              "tertiary-fixed": "#ffd9e1",
+              "inverse-surface": "#34310d",
+              "tertiary": "#ab2c5d",
+              "surface-container-highest": "#eae4b1",
+              "inverse-primary": "#ffb2bf",
+              "secondary": "#77574d",
+              "on-surface-variant": "#534247",
+              "primary-fixed-dim": "#ffb2bf",
+              "on-tertiary-fixed": "#3f001b",
+              "on-background": "#1e1c00",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1e1c00",
+              "outline": "#867277",
+              "surface-bright": "#fffadf",
+              "tertiary-container": "#ff89ac",
+              "surface-variant": "#eae4b1",
+              "secondary-container": "#fed3c7",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#ffdbd0",
+              "surface-tint": "#bc004f",
+              "primary-container": "#ff8aa3",
+              "tertiary-fixed-dim": "#ffb1c5",
+              "on-error": "#ffffff",
+              "background": "#fffadf",
+              "primary-fixed": "#ffd9de",
+              "on-primary-container": "#860036",
+              "inverse-on-surface": "#f8f3be",
+              "surface-container-low": "#fbf5c1",
+              "on-secondary-fixed": "#2c160e",
+              "secondary-fixed-dim": "#e7bdb1",
+              "surface-dim": "#e1dca9",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#795950",
+              "surface": "#fffadf",
+              "on-secondary-fixed-variant": "#5d4037",
+              "surface-container-high": "#f0eab6",
+              "surface-container": "#f6f0bb",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#90003b",
+              "on-tertiary-fixed-variant": "#8b0e45",
+              "primary": "#bc004f",
+              "on-tertiary-container": "#830440",
+              "outline-variant": "#d8c1c6"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            background-color: #fffadf;
+            color: #1e1c00;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fffadf]/85 dark:bg-zinc-900/85 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-[#bc004f] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-xl font-serif font-bold text-[#1e1c00] dark:text-[#fffadf]">Sweet Crumbs Bakery</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#bc004f] font-bold Be Vietnam Pro title-sm tracking-wider uppercase text-xs" href="home.html">Home</a>
+<a class="text-[#1e1c00] dark:text-[#fffadf] opacity-80 hover:opacity-70 transition-opacity Be Vietnam Pro title-sm tracking-wider uppercase text-xs" href="menu.html">Menu</a>
+<a class="text-[#1e1c00] dark:text-[#fffadf] opacity-80 hover:opacity-70 transition-opacity Be Vietnam Pro title-sm tracking-wider uppercase text-xs" href="contact.html">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium hover:opacity-90 active:scale-95 transition-all shadow-sm">
+                Order Now
+            </button>
+</div>
+<div class="bg-[#eae4b1] dark:bg-zinc-800 h-[1px] opacity-20"></div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex items-center px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center w-full">
+<div class="z-10 order-2 lg:order-1">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Artisanal &amp; Fresh</span>
+<h1 class="text-5xl md:text-7xl font-serif text-on-surface leading-[1.1] mb-6">
+                        Freshly Baked <span class="italic text-primary-fixed-dim">Happiness</span> Every Day
+                    </h1>
+<p class="text-on-secondary-container text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
+                        Indulge in our collection of freshly baked bread, cakes, and treats made with love and the finest organic ingredients.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-lg hover:opacity-90 transition-all active:scale-95">
+                            Order Now
+                        </button>
+<a href="menu.html" class="inline-flex items-center justify-center bg-secondary-container text-on-secondary-container px-8 py-4 rounded-md font-bold text-lg hover:bg-opacity-80 transition-all active:scale-95">
+                            View Menu
+                        </a>
+</div>
+</div>
+<div class="relative order-1 lg:order-2">
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="relative aspect-square rounded-lg overflow-hidden rotate-2 hover:rotate-0 transition-transform duration-700 shadow-2xl">
+<img alt="Artisan Sourdough" class="w-full h-full object-cover" data-alt="Close-up of freshly baked artisan sourdough bread with flour dusting on a rustic wooden board with soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2TTniy9z2NDsLJH6TNIWhgB7KJJYkUnTD0oKn8cSAuAo75kbrTCr7n6PLp-U_YHa7lxU42RHGKURi1TSIIIr648iTp1d-fzdIa0j1KTz9wPzOggVnucTTMsj8pXB84tSlY-7uAB5ZmRK0hpjGC932R_VaqLgi2sAObt1BX1SZxK7POvvQcaG7WBi0Yvyc9y9PVVY75C0Pm6e7gzxAW2rLoKH1-uAlbj9C9mIHzSrBCrZlgcCcc2aDlVI0U110n_7XO9dOjQTAVbML"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-4 rounded-lg shadow-xl hidden md:block -rotate-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 bg-tertiary-container rounded-full flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined" data-icon="bakery_dining">bakery_dining</span>
+</div>
+<div>
+<p class="font-serif font-bold text-sm">Signature Batch</p>
+<p class="text-xs opacity-60">Coming out at 8:00 AM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Snippet -->
+<section class="py-24 bg-surface-container-low px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-lg overflow-hidden">
+<img alt="Baker at work" class="w-full h-full object-cover" data-alt="Professional baker dusting flour over a large bowl of dough in a sunlit kitchen with warm wooden textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqBrACp4WxUqkrcQFkprdMwn3VIUehbWd_FbZbxeoj5f0AoxmcnAKh_6fTU6YIl7WSsB80mB2DdCpRPB-d6Mo8Rpq53dHq2bRBSHymw1NQGhyg2W9PN9ADAeB5RxzEm9YLsRGgIvhcjApIDPOIPxKfl_lTuP8I4p55P_maC5DyErWz7MfhNDcxS6sbnfmnDcq_ye1GiLzvcjsS4EVDdfsqgaHElBFj5-7NPYIk7tJOPZ8OB-umPwGzP6sePwlavzdmJrW6VOQrNguP"/>
+</div>
+<div class="absolute -right-8 -bottom-8 w-48 h-48 rounded-lg overflow-hidden border-[12px] border-surface-container-low hidden md:block shadow-lg">
+<img alt="Pastries" class="w-full h-full object-cover" data-alt="Assorted French pastries including croissants and danishes beautifully arranged on a white marble countertop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcisB5BTY0TMJMZUohHWY8hugzO1nO9dk9te1C_Pb5zp3lQyW35OQIl8E3i10x1503H1lzFElBRuwvhCOdqnK3WJtUqIFpAw6m9PN4C_oyDvAep1EFeKeMB01r0j_tY3gkngCAd5MkaCRYWSmWjDbW07K6QAyZfXVZcxfMMkriJoKBhbbs5HciacfTF4T-uJCpMY4GxD4jEy52NHISrhgeizUzPmo11JXbiipUXbpooPtQu6FFSmxFM9CMYNmcSyVfN7DkhH9TPRcV"/>
+</div>
+</div>
+<div class="lg:col-span-7">
+<h2 class="text-4xl md:text-5xl font-serif mb-8 text-on-surface leading-tight">Crafting Memories, <br/><span class="italic">One Crumb at a Time</span></h2>
+<div class="space-y-6 text-on-secondary-container text-lg leading-relaxed max-w-2xl">
+<p>
+                                Founded in a small kitchen with nothing but a rolling pin and a dream, Sweet Crumbs Bakery has grown into a local sanctuary for bread lovers and sweet tooths alike.
+                            </p>
+<p>
+                                We believe that the best things in life take time. That's why our sourdough ferments for 48 hours, and our butter is sourced from local pasture-raised cows. No shortcuts, no preservatives—just honest, artisan baking.
+                            </p>
+<div class="pt-6">
+<a class="text-primary font-bold inline-flex items-center gap-2 group" href="#">
+                                    Our Story 
+                                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_right_alt">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Highlight (Editorial Grid) -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Our Favorites</p>
+<h2 class="text-4xl font-serif">Today's Fresh Batch</h2>
+</div>
+<a class="text-on-surface-variant underline underline-offset-8 font-medium" href="menu.html">Browse Full Menu</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-6 bg-surface-container-high relative">
+<img alt="Berry Tart" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Exquisite berry tart with fresh raspberries and blueberries on a light cream base, shot with shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWkiX--cJRqUn3CIr6feNeoJWbbpgBaVkXOtK-Z6kVmqWovJXwVQlLcy2eK221dfEwiVbQqtBMIyMPc2Q1bIl5EsRhkvFECuiCB-CQuHwRc64Cn97lLe4vIcJkkXCoo4n-LVYkCUJqgAgD_A4KyuOfHnLscqsyIqLDlgFzxYBlQlNtS6BL7GdhHQzH7aqwdN2kRysd_zfXM1Ezc0j7ITLuj46rcrqMPR_OakfpVqXbGvTQCQGNRPxI4Oy_wvCncsjdxJD2OSH_1qT3"/>
+<div class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter">
+                                Bestseller
+                            </div>
+</div>
+<h3 class="text-2xl font-serif mb-2">Wild Berry Galette</h3>
+<p class="text-on-secondary-container opacity-80 mb-4 italic">Flaky crust, seasonal berries, honey glaze.</p>
+<span class="text-primary font-bold">$12.50</span>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer translate-y-8">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-6 bg-surface-container-high relative">
+<img alt="Honey Loaf" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Loaf of dark multi-seed bread sliced on a stone board with a drizzle of honey in the background, moody soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUJoxuV-O4SeUZBTu4JWSiABZg6GW6chXuW-eYqX0OFnn8uRu5M9JGoc5h9L3G7ayLOmSDZfUEvHtVkiKaI2AqY1fzzq44Y94oFqfB6iWlqc-QIK4wWoXOUwCdfawSw5ytYcrZnGnxB2aZYNx0sOwKKZrXapNUcxgNHeUzcN1PKdrDkFsHSI9pMwWmL2H3bQ0jJCkS5S0S9sOKXAlxSXEq7nAeTNdqTZErvZtLQY23bBPffIfeKD2U7ULFMwecs6iegS02k1iIZFXM"/>
+</div>
+<h3 class="text-2xl font-serif mb-2">Heritage Honey Rye</h3>
+<p class="text-on-secondary-container opacity-80 mb-4 italic">48-hour ferment, wildflower honey, toasted seeds.</p>
+<span class="text-primary font-bold">$9.00</span>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-6 bg-surface-container-high relative">
+<img alt="Macarons" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Elegant pastel-colored macarons stacked vertically on a porcelain plate, soft pink and cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtHtfiSRvoKuOoEnyJyvdVtHKNty0shuVFi8vLlrestn5dFvpzDLkxbDWNvnRDlm68YuP3dojyapdHXDZWnjjxfEnmRUJjSim6iW7YDSMxm_4ofvq43vcnRcYnmkWNjxR39HjUlWGScGwfZN49IIneh7n16NrOmWmWMWNIv7jjL8lRfr-CfXNJyLDTGIXL25yE60Wgb_Oi-3tl6v5tuKGdpYoyu2Owuz4-XxAIA4I8NskcxVvKlcBC81frMZpDtTbpQNcw28kqNh3s"/>
+</div>
+<h3 class="text-2xl font-serif mb-2">Petite Macarons</h3>
+<p class="text-on-secondary-container opacity-80 mb-4 italic">Almond flour, French buttercream, hand-painted.</p>
+<span class="text-primary font-bold">$18.00 / Box of 6</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Carousel -->
+<section class="py-24 bg-surface-container px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-serif mb-4">Love from Our Community</h2>
+<div class="w-24 h-1 bg-primary/20 mx-auto rounded-full"></div>
+</div>
+<div class="flex gap-8 overflow-x-auto pb-12 snap-x no-scrollbar">
+<!-- Testimonial 1 -->
+<div class="min-w-[300px] md:min-w-[400px] bg-surface-container-lowest p-10 rounded-lg snap-center shadow-[0_4px_30px_rgba(121,89,80,0.06)]">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-serif italic text-xl mb-8 leading-relaxed text-on-surface">
+                            "The sourdough here is life-changing. I drive 30 minutes every Saturday just for a warm loaf of the Heritage Rye."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container overflow-hidden">
+<img alt="Sarah M." class="w-full h-full object-cover" data-alt="Portrait of a smiling young woman with warm lighting and soft blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyXgHiXyXnO6xe0WhpeFQ7uoTy0CkfUsX66PwVPiMSAfOn2c9ZFtDBMj_62HYQLRcZET8i63uy_8rc5JWX7TKW9hVaHa9ba55FmTVgsxFNzgCrUL27Go0lS183hohMc-47qytpHYxT9Xpo8p5Eb6hq4djoEouF5FRBREUYqdGvXXmi8bLqhUGlyy7iSWnHYhaD4r06VmxnxO7ujR0qWmKkaB-KB9vXFXOMpmjs94gZIEavgIyzuOUimQwo7aJaH2wZWngp3cWuf91H"/>
+</div>
+<div>
+<h4 class="font-bold text-sm">Sarah Mitchell</h4>
+<p class="text-xs text-on-secondary-container opacity-60">Loyal Customer since 2021</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-[300px] md:min-w-[400px] bg-surface-container-lowest p-10 rounded-lg snap-center shadow-[0_4px_30px_rgba(121,89,80,0.06)]">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-serif italic text-xl mb-8 leading-relaxed text-on-surface">
+                            "I ordered my wedding cake from Sweet Crumbs and it was absolute perfection. Beautifully decorated and so moist!"
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container overflow-hidden">
+<img alt="James L." class="w-full h-full object-cover" data-alt="Portrait of a middle-aged man with a friendly expression in an outdoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHBDVEju-eN1MbXJzwe7lnHZic4NfhA_uONnYSIdDSkG8q2xIyL3uE6wby5x8w_TOC9D1O6nhXGjRXVIENpWJW-Bja8DiO4TX-Gzv_WqcKQEUapeESHnbB3QLBYwKzRkQsXGmck_kgoaR0QEiAmbhJHtEUsaUKOOShYqNhFoAq_dWeTqyI2gLvY56T5MLwzYji55r5-CnF7Q_NSghZk-X-wl9iQ5DRnMfhDevt01BbRRhqpJ5qSRkDuUnD2bKA6Xvr2YQ2RFc-YvQP"/>
+</div>
+<div>
+<h4 class="font-bold text-sm">James Loughton</h4>
+<p class="text-xs text-on-secondary-container opacity-60">Catering Client</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="min-w-[300px] md:min-w-[400px] bg-surface-container-lowest p-10 rounded-lg snap-center shadow-[0_4px_30px_rgba(121,89,80,0.06)]">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-serif italic text-xl mb-8 leading-relaxed text-on-surface">
+                            "The best croissants outside of Paris. You can taste the quality of the butter in every single layer."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container overflow-hidden">
+<img alt="Elena R." class="w-full h-full object-cover" data-alt="Close-up portrait of a woman laughing in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcc9r7LPV1Cjk5yAWviMwbunJrA0QiZ68WTzEBIv5tn3rNNi7_R1EqeO7VWLXvxon36NdXCMfIrxxBFF-K4wUBTIIQIGzsm6KEC4V1qtpCM6vEV-ZBmSUZMPgYyVZ1lJDhaS7R_MVMur3UyKCFs0F0yNlWPMuQyX9t6p84OI2q9Q6hI5z53f9S_i20Gmim_QaEXY6I2e-VZj7TsKTHFLFKDrYKH_xGmKqGsuLlt2kw4WCrAH6AD9LQLYkQFIQactwlEhswwDe5FNUy"/>
+</div>
+<div>
+<h4 class="font-bold text-sm">Elena Rodriguez</h4>
+<p class="text-xs text-on-secondary-container opacity-60">Daily Regular</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2rem] bg-[#fbf5c1] dark:bg-zinc-800 mt-12">
+<div class="flex flex-col items-center gap-8 py-12 px-6 text-center w-full max-w-7xl mx-auto">
+<span class="text-lg font-serif text-[#1e1c00]">Sweet Crumbs Bakery</span>
+<p class="Noto Serif italic body-lg text-[#bc004f]">Freshly Baked Happiness Every Day</p>
+<div class="flex gap-8">
+<a class="text-[#795950] dark:text-zinc-400 hover:text-[#bc004f] transition-colors hover:underline underline-offset-4 Be Vietnam Pro font-medium" href="#">Instagram</a>
+<a class="text-[#795950] dark:text-zinc-400 hover:text-[#bc004f] transition-colors hover:underline underline-offset-4 Be Vietnam Pro font-medium" href="#">Facebook</a>
+<a class="text-[#795950] dark:text-zinc-400 hover:text-[#bc004f] transition-colors hover:underline underline-offset-4 Be Vietnam Pro font-medium" href="#">Pinterest</a>
+</div>
+<div class="pt-8 w-full border-t border-on-surface/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs opacity-60">
+<p>© 2024 Sweet Crumbs Bakery. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Mobile Bottom NavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-[#fffadf] dark:bg-zinc-900 z-50 rounded-t-[2rem] border-t border-[#d8c1c6]/15 shadow-[0_-4px_30px_rgba(121,89,80,0.06)]">
+<a class="flex flex-col items-center justify-center bg-[#fed3c7] dark:bg-[#bc004f]/20 text-[#795950] dark:text-[#f48fb1] rounded-full px-6 py-1 active:scale-90 transition-transform" href="home.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="Noto Serif italic text-xs">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1e1c00] dark:text-[#fffadf] opacity-60 hover:bg-[#f6f0bb] dark:hover:bg-zinc-800 rounded-full p-2" href="menu.html">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="Noto Serif italic text-xs">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1e1c00] dark:text-[#fffadf] opacity-60 hover:bg-[#f6f0bb] dark:hover:bg-zinc-800 rounded-full p-2" href="contact.html">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="Noto Serif italic text-xs">Contact</span>
+</a>
+</nav>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#3f0016",
+              "tertiary-fixed": "#ffd9e1",
+              "inverse-surface": "#34310d",
+              "tertiary": "#ab2c5d",
+              "surface-container-highest": "#eae4b1",
+              "inverse-primary": "#ffb2bf",
+              "secondary": "#77574d",
+              "on-surface-variant": "#534247",
+              "primary-fixed-dim": "#ffb2bf",
+              "on-tertiary-fixed": "#3f001b",
+              "on-background": "#1e1c00",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1e1c00",
+              "outline": "#867277",
+              "surface-bright": "#fffadf",
+              "tertiary-container": "#ff89ac",
+              "surface-variant": "#eae4b1",
+              "secondary-container": "#fed3c7",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#ffdbd0",
+              "surface-tint": "#bc004f",
+              "primary-container": "#ff8aa3",
+              "tertiary-fixed-dim": "#ffb1c5",
+              "on-error": "#ffffff",
+              "background": "#fffadf",
+              "primary-fixed": "#ffd9de",
+              "on-primary-container": "#860036",
+              "inverse-on-surface": "#f8f3be",
+              "surface-container-low": "#fbf5c1",
+              "on-secondary-fixed": "#2c160e",
+              "secondary-fixed-dim": "#e7bdb1",
+              "surface-dim": "#e1dca9",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#795950",
+              "surface": "#fffadf",
+              "on-secondary-fixed-variant": "#5d4037",
+              "surface-container-high": "#f0eab6",
+              "surface-container": "#f6f0bb",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#90003b",
+              "on-tertiary-fixed-variant": "#8b0e45",
+              "primary": "#bc004f",
+              "on-tertiary-container": "#830440",
+              "outline-variant": "#d8c1c6"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 2rem;
+        }
+        @media (min-width: 768px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fffadf]/85 dark:bg-zinc-900/85 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-[#bc004f] dark:text-[#f48fb1] hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-xl font-serif font-bold text-[#1e1c00] dark:text-[#fffadf]">Sweet Crumbs Bakery</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#1e1c00] dark:text-[#fffadf] opacity-80 hover:opacity-70 transition-opacity font-label text-sm tracking-wider" href="#">Home</a>
+<a class="text-[#1e1c00] dark:text-[#fffadf] opacity-80 hover:opacity-70 transition-opacity font-label text-sm tracking-wider" href="#">Menu</a>
+<a class="text-[#bc004f] font-bold font-label text-sm tracking-wider" href="#">Gallery</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label text-sm font-bold hover:opacity-90 transition-opacity active:scale-95 duration-200">Order Now</button>
+</div>
+<div class="bg-[#eae4b1] dark:bg-zinc-800 h-[1px] opacity-20"></div>
+</header>
+<main class="pt-24 pb-32">
+<!-- Hero Section -->
+<section class="px-6 py-12 max-w-7xl mx-auto text-center">
+<h1 class="font-headline text-5xl md:text-7xl text-on-surface mb-4">The Art of Baking</h1>
+<p class="font-headline italic text-xl text-on-secondary-container opacity-80 max-w-2xl mx-auto">A visual journey through our flour-dusted atelier, where every crumb tells a story of passion and tradition.</p>
+</section>
+<!-- Gallery Grid -->
+<section class="px-6 max-w-7xl mx-auto">
+<div class="masonry-grid">
+<!-- Item 1 -->
+<div class="masonry-item">
+<div class="bg-surface-container-low rounded-lg overflow-hidden group">
+<img alt="Artisan Cupcakes" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg" data-alt="Close-up of artisan cupcakes with swirling pink buttercream frosting and delicate sugar pearls on a marble surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYhOfd3VZVOG7-ZhufIoBuwEJtG-_Vu7qHsBM4fTF0B5fr7Orc_5DDK7QLUxdCfUXtPH8ZGeeGYlI1IhMOJmXbNmod3vun8wFBF_enGE3NZyj0Buvz4K8Re_piPGAyAItqbUs9cabCSDmyIO4UmmgXEQeNIMNy1aLwo-uzyyXIlQEdB2IIqRWx5djwsVTqnSt-tpRKDPHf_61oa4qzpoqF349Pv5jLHt_QmPv1AcpVR0tVvzVst1suzKyudxjp4MCm5oWKX0J7HD2A"/>
+<div class="p-6">
+<span class="inline-block bg-tertiary-container text-on-tertiary-container text-xs font-bold px-3 py-1 rounded-full mb-2">Signature</span>
+<h3 class="font-headline text-xl text-on-surface">Velvet Rose Cupcakes</h3>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="masonry-item">
+<div class="bg-surface-container-low rounded-lg overflow-hidden group">
+<img alt="Fresh Sourdough" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg" data-alt="Golden brown sourdough bread loaves resting on a rustic wooden table dusted with flour in a sunlit bakery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjXvdG772l2rHyLcOwQeOLf1ECdcHqCj8wlzY8MdYwGlBFsr6xyKfMD7WwIE8hbjpR0c2YAbgtSbWp3yS1UzW5tT9YKqes9Bm2WSU2a9jd1_xwnBVBkos1vLbx5SnikebAqpfkkWSEzwxQ4tBRfZKTa-z0Okwe_tEdi0VyCmu287eCTcMNRf3Wz4U6Ku_gHBNSURPjc0GORHYuumOZw-MEYb9YCKcSp-T67nvgp1PS5aAUfKQJJLRL1OVL6ln5w805kLuU3e3yX09R"/>
+<div class="p-6">
+<h3 class="font-headline text-xl text-on-surface">Country Sourdough</h3>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="masonry-item">
+<div class="bg-surface-container-low rounded-lg overflow-hidden group relative">
+<div class="absolute inset-0 bg-surface-tint/5 pointer-events-none"></div>
+<img alt="Bakery Interior" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg" data-alt="A warm, cozy bakery interior with soft amber lighting, vintage wooden shelves, and the aroma of fresh pastries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChbuJ9HalyCknxBaMtZD2BzJykftGIrzYcig3l6tjPQf_t2TPPEr06s4EoVb4qF6LMCwicnqO7QkmceI5LnRXLXNHCIFDNEN0SvYqcL8WTLfgXjIrqkAppVL0INrBEXm0HbUpEzxeUAcBM3eGDcDBOTGZwX_905MrGaY9RBCGAhyu8EwF8JTAOEXbappZJmYouBzmb1a-TO1FAA9XCi9Rrxa1GPyBtNaDjzT4VZYPCaZJIZq0rhH5gSkIZpd2aiyaTYrrPa6ZJ7ynR"/>
+<div class="p-6">
+<span class="inline-block bg-secondary-container text-on-secondary-container text-xs font-bold px-3 py-1 rounded-full mb-2">Our Home</span>
+<h3 class="font-headline text-xl text-on-surface">The Cozy Corner</h3>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="masonry-item">
+<div class="bg-surface-container-low rounded-lg overflow-hidden group">
+<img alt="Wedding Cake" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg" data-alt="Exquisite tiered wedding cake decorated with fresh white flowers and gold leaf accents against a neutral backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIS0MQ-80k44uifqmX5Ic9x-BxYi3orYF8XWmO5-4todCdCWzo7-tUvU5T5I3X41InhlvwQOVUDzAezafBiE5nDWH8xm4nIqnoenWEpfzkEm_-eqZLYYgNzD3phXBwrHZWJ3ptUQRcGQW-SXi14BRoXlI1P2mFyUwPt_YE8zS0seedir19kTe2M_1ZOwUDp5pnBT8bQwMJg5z1AdNTnowQ0oIOy0SoaeOHl0QOFzNudaYO2L98LpCdDzxMq6q4ogaaZsV1JSSb5uWQ"/>
+<div class="p-6">
+<h3 class="font-headline text-xl text-on-surface">Celebration Tiers</h3>
+</div>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="masonry-item">
+<div class="bg-surface-container-low rounded-lg overflow-hidden group">
+<img alt="Buttery Pastries" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg" data-alt="Assorted flaky buttery croissants and pain au chocolat arranged on a cooling rack in a morning bakery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbN-jneX9D2QYB0e8t28oGkjiRFCsLhtHSM6LgWYtcbkQe6oyD2FhHrIUcg6YBCKoUUapgWOB6hFCZO8X1Dk4GLuF7AlUd2CsvM3oLRSqvYAQZV-tEVzQz1aHGbH19NPqbpCuiTiXPeaMgWTMj3PGHLsNnwgzFr17unMkzikOKF9zhde20dPRnDj_z7QYm6AcUsyrXp9XHGaSXfxUDeO1m-XK-YMF-njP9Tkjp5wvAcnGoBrupaZd0a9GMsK2z9j20u5PgCg6dS2K0"/>
+<div class="p-6">
+<span class="inline-block bg-tertiary-container text-on-tertiary-container text-xs font-bold px-3 py-1 rounded-full mb-2">Daily Batch</span>
+<h3 class="font-headline text-xl text-on-surface">Morning Croissants</h3>
+</div>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="masonry-item">
+<div class="bg-surface-container-low rounded-lg overflow-hidden group">
+<img alt="Colorful Macarons" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg" data-alt="Macarons in pastel colors neatly stacked in a gift box with a soft romantic bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIqhO-zL1vCT94hp0zVs4UhW9YZqLt4GIpkKPndamKPUuO3c1hmfdqwlEwzoWgIF3oKBQ6EvBDjU-uFBmzQ8qDXgMC9KdFHbWkGg0IFXmEVvwsse0DQpVtis-PnOD-qBGJ2RnNC7JJN1q0h73RDHsIc4bAL2LURfb9Fcxdq7EyP2Y2Of4SiwScd9YJ2QSTXcCuuHagYwx7saqGz2g10iK9Ww6orFSZiv548sJRefcCia42MfxSs6lWoM2H-jlGDOcaQGXRokVlF5_f"/>
+<div class="p-6">
+<h3 class="font-headline text-xl text-on-surface">Parisian Macarons</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Instagram CTA -->
+<section class="mt-16 mb-24 px-6 text-center">
+<div class="bg-surface-container rounded-lg p-12 max-w-3xl mx-auto shadow-[0_4px_30px_rgba(121,89,80,0.06)] relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-tertiary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -left-12 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl"></div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="camera_alt">camera_alt</span>
+<h2 class="font-headline text-3xl text-on-surface mb-6">Stay Connected</h2>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label font-bold text-lg hover:opacity-90 transition-opacity active:scale-95 shadow-lg shadow-primary/20">
+                    Follow us on Instagram for daily treats
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2rem] bg-[#fbf5c1] dark:bg-zinc-800">
+<div class="flex flex-col items-center gap-8 py-12 px-6 text-center w-full">
+<div class="text-lg font-serif text-[#1e1c00] dark:text-[#fffadf] font-bold">Sweet Crumbs Bakery</div>
+<div class="flex gap-8">
+<a class="text-[#795950] dark:text-zinc-400 font-headline italic body-lg hover:text-[#bc004f] transition-colors focus:ring-2 focus:ring-[#bc004f]/20 outline-none rounded-sm" href="#">Instagram</a>
+<a class="text-[#795950] dark:text-zinc-400 font-headline italic body-lg hover:text-[#bc004f] transition-colors focus:ring-2 focus:ring-[#bc004f]/20 outline-none rounded-sm" href="#">Facebook</a>
+<a class="text-[#795950] dark:text-zinc-400 font-headline italic body-lg hover:text-[#bc004f] transition-colors focus:ring-2 focus:ring-[#bc004f]/20 outline-none rounded-sm" href="#">Pinterest</a>
+</div>
+<p class="font-headline italic body-lg text-[#795950] dark:text-zinc-400">Freshly Baked Happiness Every Day</p>
+<div class="text-xs text-[#795950]/50 mt-4">© 2024 Sweet Crumbs Bakery. Crafted with Love.</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-[#fffadf] dark:bg-zinc-900 z-50 rounded-t-[2rem] shadow-[0_-4px_30px_rgba(121,89,80,0.06)] border-t border-[#d8c1c6]/15">
+<a class="flex flex-col items-center justify-center text-[#1e1c00] dark:text-[#fffadf] opacity-60 hover:bg-[#f6f0bb] dark:hover:bg-zinc-800 rounded-full px-4 py-1" href="home.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-headline italic text-xs">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1e1c00] dark:text-[#fffadf] opacity-60 hover:bg-[#f6f0bb] dark:hover:bg-zinc-800 rounded-full px-4 py-1" href="menu.html">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-headline italic text-xs">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#fed3c7] dark:bg-[#bc004f]/20 text-[#795950] dark:text-[#f48fb1] rounded-full px-6 py-1 active:scale-90 transition-transform" href="custom_orders.html">
+<span class="material-symbols-outlined" data-icon="cake">cake</span>
+<span class="font-headline italic text-xs">Custom</span>
+</a>
+</nav>
+</body></html>
